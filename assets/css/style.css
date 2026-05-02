@@ -659,6 +659,7 @@
    }
    
     @media (max-width: 768px) {
+        /* Navbar */
         .mobile-menu-btn { display: none !important; }
         .navbar { padding: 0.75rem 0; }
         .navbar.scrolled { padding: 0.5rem 0; }
@@ -676,4 +677,37 @@
         .nav-actions { gap: 0.5rem; }
         .theme-toggle { font-size: 0.9rem; }
         .custom-cursor { display: none !important; }
+
+        /* Hero */
+        .hero { min-height: 100vh; height: auto; }
+        .hero-title { font-size: clamp(2.5rem, 10vw, 5rem); }
+        .hero-desc { font-size: 1rem; }
+        .hero-btns { display: flex; flex-direction: column; gap: 1rem; }
+        .hero-btns .btn { font-size: 0.9rem; padding: 0.8rem 1.5rem; }
+
+        /* Sections */
+        .section { padding: 4rem 0; }
+        .huge-text { font-size: clamp(2rem, 8vw, 3.5rem); }
+        
+        /* Service rows */
+        .service-row { padding: 1.5rem 0; }
+        .service-row-title { font-size: clamp(1.2rem, 5vw, 2rem); }
+        .service-row-icon { font-size: 1.2rem; }
+
+        /* Footer */
+        .footer { padding: 4rem 0 2rem; border-radius: 20px 20px 0 0; }
+        .footer-huge-text { font-size: clamp(2.5rem, 12vw, 6rem); margin-bottom: 2rem; }
+        .footer-grid { gap: 2rem; }
+        .footer h4 { font-size: 1.2rem; margin-bottom: 1rem; }
+        .footer a { font-size: 0.95rem; }
+        .footer img { height: 80px !important; }
+
+        /* Ticker */
+        .ticker-item { font-size: 1rem; padding: 0 1.5rem; }
+
+        /* Buttons */
+        .btn { font-size: 0.9rem; padding: 0.8rem 1.5rem; }
+
+        /* WhatsApp float */
+        .whatsapp-float { width: 50px; height: 50px; font-size: 1.5rem; bottom: 20px; right: 20px; }
     }
