@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Viza Spot Travels & General Services</title>
+    <meta name="description" content="Explore our comprehensive range of travel, visa, Iqama, and government PRO services in Saudi Arabia.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+    <style>
+        .page-header {
+            padding: 250px 0 100px;
+            background-color: var(--bg-color);
+            text-align: left;
+        }
+        
+        .page-title {
+            font-size: clamp(4rem, 10vw, 10rem);
+            line-height: 0.9;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
+        }
+        
+        .services-section {
+            padding: 8rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .service-category-header {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            margin-bottom: 5rem;
+            align-items: end;
+        }
+        
+        .service-category-title {
+            font-size: clamp(3rem, 6vw, 6rem);
+            margin: 0;
+            line-height: 1;
+        }
+        
+        .service-category-desc {
+            font-size: 1.5rem;
+            max-width: 600px;
+        }
+        
+        .service-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-item-premium {
+            background-color: var(--surface-color);
+            padding: 4rem 3rem;
+            border-radius: 24px;
+            transition: all var(--transition-normal);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+        
+        .service-item-premium:hover {
+            transform: translateY(-10px);
+            background-color: var(--text-primary);
+            color: var(--bg-color);
+        }
+        
+        .service-item-premium i {
+            font-size: 3rem;
+            color: var(--brand-secondary);
+            margin-bottom: 2rem;
+            display: block;
+        }
+        
+        .service-item-premium h4 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            transition: color var(--transition-normal);
+        }
+        
+        .service-item-premium:hover h4,
+        .service-item-premium:hover p {
+            color: var(--bg-color);
+        }
+        
+        .service-item-premium p {
+            font-size: 1.125rem;
+            opacity: 0.8;
+            transition: color var(--transition-normal);
+        }
+
+        @media (max-width: 992px) {
+            .service-category-header {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpg" alt="Viza Spot Logo" style="height: 70px; border-radius: 8px;">
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container fade-up">
+            <h1 class="page-title">Expertise<br>Unleashed.</h1>
+            <p style="font-size: 1.5rem; max-width: 800px;">Comprehensive travel, visa, and government PRO services under one roof. Designed for speed, built on trust.</p>
+        </div>
+    </div>
+
+    <!-- Travel & Tourism -->
+    <section id="travel" class="services-section">
+        <div class="container">
+            <div class="service-category-header fade-up">
+                <div>
+                    <h2 class="service-category-title text-primary">01 /<br>Travel.</h2>
+                    <p class="service-category-desc">From complex business itineraries to holiday getaways, we handle every detail of your international and domestic travel.</p>
+                </div>
+                <div style="height: 300px; border-radius: 20px; overflow: hidden; position: relative;" class="image-reveal fade-up">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Travel and Tourism" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+            
+            <div class="service-list-grid">
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h4>Air Ticket Booking</h4>
+                    <p>International and domestic flight reservations.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Visit Visas</h4>
+                    <p>Visit visas for UAE, Qatar, Bahrain, Oman, and Kuwait.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-hotel"></i>
+                    <h4>Holiday Packages</h4>
+                    <p>Complete holiday packages and hotel reservations globally.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <h4>Travel Insurance</h4>
+                    <p>Comprehensive travel insurance for all destinations.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-car"></i>
+                    <h4>Airport Pickup & Drop</h4>
+                    <p>Reliable transportation to and from the airport.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-users-line"></i>
+                    <h4>Group Travel</h4>
+                    <p>Custom group travel arrangements for corporate or family needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Umrah & Religious Travel -->
+    <section id="umrah" class="services-section">
+        <div class="container">
+            <div class="service-category-header fade-up" style="direction: rtl;">
+                <div style="direction: ltr;">
+                    <h2 class="service-category-title text-primary">02 /<br>Umrah.</h2>
+                    <p class="service-category-desc">Sacred journeys managed with the utmost respect and care.</p>
+                </div>
+                <div style="height: 300px; border-radius: 20px; overflow: hidden; position: relative;" class="image-reveal fade-up">
+                    <img src="assets/images/umrah.png" alt="Umrah" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+            
+            <div class="service-list-grid" style="direction: ltr;">
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-kaaba"></i>
+                    <h4>Umrah Visas</h4>
+                    <p>Fast processing for single or group Umrah Visas.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-bus"></i>
+                    <h4>Transport & Hotels</h4>
+                    <p>Premium transport & hotel bookings in Makkah and Madinah.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h4>Group Packages</h4>
+                    <p>Complete end-to-end Group Umrah Packages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visa & Passports -->
+    <section id="visa" class="services-section">
+        <div class="container">
+            <div class="service-category-header fade-up">
+                <div>
+                    <h2 class="service-category-title text-primary">03 /<br>Visas.</h2>
+                    <p class="service-category-desc">Navigating Saudi visa regulations is our specialty. We provide end-to-end processing for families and businesses.</p>
+                </div>
+                <div style="height: 300px; border-radius: 20px; overflow: hidden; position: relative;" class="image-reveal fade-up">
+                    <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Passports and Visas" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+            
+            <div class="service-list-grid">
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Family Visit Visa</h4>
+                    <p>Processing support for bringing family to the Kingdom.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-stamp"></i>
+                    <h4>Residence Stamping</h4>
+                    <p>Family Residence Visa Stamping procedures.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-plane-slash"></i>
+                    <h4>Exit / Re-Entry</h4>
+                    <p>Smooth processing for exit and re-entry visas.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-door-open"></i>
+                    <h4>Final Exit Visa</h4>
+                    <p>Assistance with Final Exit procedures.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-passport"></i>
+                    <h4>Passport Updates</h4>
+                    <p>Passport updates in Absher and Muqeem systems.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-file-shield"></i>
+                    <h4>Police Clearance</h4>
+                    <p>Assistance obtaining Police Clearance Certificates (PCC).</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <h4>New Visa Issuance</h4>
+                    <p>Full assistance with new visa issuances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Iqama & PRO -->
+    <section id="pro" class="services-section">
+        <div class="container">
+            <div class="service-category-header fade-up" style="direction: rtl;">
+                <div style="direction: ltr;">
+                    <h2 class="service-category-title text-primary">04 /<br>PRO.</h2>
+                    <p class="service-category-desc">We act as your dedicated Government Relations Officer, managing Iqamas, Qiwa, GOSI, and Mudad seamlessly.</p>
+                </div>
+                <div style="height: 300px; border-radius: 20px; overflow: hidden; position: relative;" class="image-reveal fade-up">
+                    <img src="assets/images/office.png" alt="Professional Office" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+            
+            <div class="service-list-grid" style="direction: ltr;">
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-id-card"></i>
+                    <h4>Iqama Renewal</h4>
+                    <p>Iqama Renewal & Printing for individuals and companies.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h4>Profession Change</h4>
+                    <p>Assistance in changing professions on your Iqama.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-right-left"></i>
+                    <h4>Sponsorship Transfer</h4>
+                    <p>Smooth Naqal Kafala (sponsorship transfer).</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-user-minus"></i>
+                    <h4>Huroob Status</h4>
+                    <p>Huroob Status checks and assistance.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h4>Health Insurance</h4>
+                    <p>Health Insurance status checks and employee issuance.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-car-burst"></i>
+                    <h4>Vehicle Insurance</h4>
+                    <p>Vehicle insurance processing and renewals.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-building"></i>
+                    <h4>Company Registration</h4>
+                    <p>Company Registration support and Asharqia Chamber services.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-users-viewfinder"></i>
+                    <h4>Visa Quota</h4>
+                    <p>Visa Quota & Block Visa Processing for establishments.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <h4>Contract Management</h4>
+                    <p>Employment Contract Management on Qiwa.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h4>Government Portals</h4>
+                    <p>Absher, Muqeem, Qiwa, GOSI, Mudad, and Document Uploads.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Attestation -->
+    <section id="attestation" class="services-section">
+        <div class="container">
+            <div class="service-category-header fade-up">
+                <div>
+                    <h2 class="service-category-title text-primary">05 /<br>Docs.</h2>
+                    <p class="service-category-desc">Professional document attestation and certified translations for all your legal needs.</p>
+                </div>
+            </div>
+            
+            <div class="service-list-grid">
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h4>Educational Certificates</h4>
+                    <p>Attestation of university and educational degrees.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-ring"></i>
+                    <h4>Marriage & Birth</h4>
+                    <p>Marriage and Birth Certificate attestation.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-building-flag"></i>
+                    <h4>Embassy & MOFA</h4>
+                    <p>Official Embassy and MOFA Attestations.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-language"></i>
+                    <h4>Translation</h4>
+                    <p>Certified Translation (Arabic ↔ English).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery & Contracting Companies -->
+    <section id="delivery" class="services-section">
+        <div class="container">
+            <div class="service-category-header fade-up" style="direction: rtl;">
+                <div style="direction: ltr;">
+                    <h2 class="service-category-title text-primary">06 /<br>Fleets.</h2>
+                    <p class="service-category-desc">Specialized services for Delivery & Contracting Companies (Noon, Jahez, Mrsool, Amazon).</p>
+                </div>
+            </div>
+            
+            <div class="service-list-grid" style="direction: ltr;">
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <h4>Rider Visas</h4>
+                    <p>Rider and Worker Visa Processing at scale.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <h4>Bulk Processing</h4>
+                    <p>Bulk Iqama, Insurance & License Work for your fleet.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    <h4>Onboarding</h4>
+                    <p>Complete Onboarding Documentation Support for riders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section id="additional" class="services-section">
+        <div class="container">
+            <div class="service-category-header fade-up">
+                <div>
+                    <h2 class="service-category-title text-primary">07 /<br>Extras.</h2>
+                    <p class="service-category-desc">We offer a wide array of additional services to make your life easier in Saudi Arabia.</p>
+                </div>
+            </div>
+            
+            <div class="service-list-grid">
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-id-card-clip"></i>
+                    <h4>Driving License</h4>
+                    <p>Driving License Appointment Assistance.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h4>Custom Clearance</h4>
+                    <p>Assistance with Custom Clearance Paperwork.</p>
+                </div>
+                <div class="service-item-premium fade-up">
+                    <i class="fa-solid fa-keyboard"></i>
+                    <h4>Form Filling</h4>
+                    <p>Any Online Government Form Filling assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/966563181876" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" data-cursor="hover">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Awwwards Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer-huge-text fade-up">VIZA SPOT</h2>
+            
+            <div class="footer-grid">
+                <div class="fade-up">
+                    <h4>About Us</h4>
+                    <p style="color: rgba(255,255,255,0.6); max-width: 400px; font-size: 1.1rem; margin-bottom: 2rem;">
+                        Premium Travel, Tourism, Visa & Government PRO Services Office located in Saudi Arabia. Making complex procedures seamless.
+                    </p>
+                    <img src="assets/images/logo.jpg" alt="Viza Spot Logo" style="height: 120px; border-radius: 12px; display: block;">
+                </div>
+                
+                <div class="fade-up">
+                    <h4>Navigation</h4>
+                    <a href="index.html" data-cursor="hover">Home</a>
+                    <a href="about.html" data-cursor="hover">Our Story</a>
+                    <a href="services.html" data-cursor="hover">Services</a>
+                    <a href="contact.html" data-cursor="hover">Contact</a>
+                </div>
+                
+                <div class="fade-up">
+                    <h4>Contact Info</h4>
+                    <a href="https://wa.me/966563181876" data-cursor="hover">+966 56 318 1876</a>
+                    <a href="https://wa.me/966534830819" data-cursor="hover">+966 53 483 0819</a>
+                    <a href="https://maps.app.goo.gl/v34xFsaAuMuVywyW9?g_st=am" target="_blank" data-cursor="hover" style="margin-top: 1rem;"><i class="fa-solid fa-location-dot" style="margin-right: 0.5rem;"></i>Saudi Arabia</a>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center;" class="fade-up">
+                <p style="color: rgba(255,255,255,0.6); margin: 0; font-size: 0.9rem;">&copy; 2026 Viza Spot Travels.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" style="color: rgba(255,255,255,0.6); margin:0;" data-cursor="hover"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="color: rgba(255,255,255,0.6); margin:0;" data-cursor="hover"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
