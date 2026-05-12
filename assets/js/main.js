@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Preloader Logic
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                preloader.remove();
+            }, 800);
+        }, 1500); // 1.5s delay to allow text animation to complete
+    }
+
     // 1. Initialize Lenis Smooth Scroll (if available)
     let lenis;
     if (typeof Lenis !== 'undefined') {
